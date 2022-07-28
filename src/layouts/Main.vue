@@ -8,12 +8,7 @@
   <slot></slot>
 </template>
 
-<script>
+<script setup>
 import VLink from '../components/VLink.vue'
 
-export default {
-  components: {
-    VLink
-  }
-}
 </script>

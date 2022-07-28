@@ -7,22 +7,19 @@
   </a>
 </template>
 
-<script>
-import routes from '../routes'
+<script setup>
+  import emitter from "@/services/emitter";
+  import routes from '../routes';
 
-export default {
-  props: {
+  const props = defineProps({
     href: {
       type:String,
       required: true
     }
-  },
+  });
 
-  methods: {
-    go () {
-      this.$root.currentRoute = this.href
-      window.history.pushState(null, routes[this.href], this.href)
-    }
+  const go = () => {
+    window.history.pushState(null, routes[props.href], props.href)
+    emitter.emit('routeChanged', props.href);
   }
-}
 </script>

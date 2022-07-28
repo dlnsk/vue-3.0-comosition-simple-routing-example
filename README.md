@@ -1,6 +1,6 @@
-# Vue 3.0 Simple Routing Example
+# Vue 3.0 Simple Routing Example (Composition API)
 
-> A simple example of routing with Vue 3.0 without using [vue-router](https://router.vuejs.org/). This branch uses the raw HTML5 History API. 
+> A simple example of routing with Vue 3.0 without using [vue-router](https://router.vuejs.org/). This branch uses the raw HTML5 History API and Vue Composition API. 
 
 ## Build Setup
 
@@ -15,4 +15,4 @@ yarn dev
 yarn build
 ```
 
-For a detailed explanation of the build process, read the [docs for vue-loader](https://vue-loader.vuejs.org/).
+Build process uses [vite](https://vitejs.dev/).
